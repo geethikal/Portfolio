@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" class="logo">-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!--<li><a href="#services">Services</a></li>-->
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Geethika Lankimalla</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profile picture.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am Geethika Lankimalla, a dedicated Master's student in Computer Science at the University of North Texas, Denton, with a strong academic record and a passion for full-stack .NET development. I have hands-on experience in software development from my role at ValueLabs, where I contributed to healthcare projects, developed APIs, and optimized databases. My technical expertise spans multiple programming languages, front-end and back-end technologies, and I have worked on innovative projects like a smart spoon for Parkinson's patients. With a keen interest in AI and ML, I am well-equipped to contribute to cutting-edge technology solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>RESTful App Development </span><br>Designing Web/App interfaces</li>
+                        <li><span>Software Development</span><br>Developed sever-side logic ad API using various technologies</li>
+                        <li><span>Front-End Development</span><br>Proficient in front-end technologies such as ReactJs, Angular, jQuery</li>
+                        <li><span>Back-End Development</span><br>Proficient in back-end technologies such as Java, C# (.Net), Microservices</li>
+                        <li><span>Database Managemennt </span><br>Utilized MySQL for database management and integration within web applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jul 2023 - Jul 2024</span><br>Student Assistant at University of North Texas</li>
+                        <li><span>Jan 2022 - Dec 2022</span><br>Software Developer at ValueLabs</li>
+                        <li><span>Sep 2021 - Dec 2021</span><br>Software Intern at ValueLabs</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jan 2023 - Jul 2024</span><br>Masters in Computer Science at University of North Texas</li>
+                        <li><span>Jul 2016 - Jul 2022</span><br>Bachelors in Computer Science (IOT) at Jain University</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Designer1.jpeg">
+                <div class="layer">
+                    <h3>Sentiment Analysis across Social Media Platforms</h3>
+                    <p>The Sentiment Analysis Across Social Media Platforms project analyzes public sentiment from social media using natural language processing and machine learning. It classifies sentiments as positive, negative, or neutral and provides a real-time dashboard for trend visualization, offering valuable insights for brand monitoring and marketing effectiveness.</p>
+                    
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (2).jpeg">
+                <div class="layer">
+                    <h3>Smart Spoon for people with Parkinson's disease</h3>
+                    <p>The Smart Spoon for Parkinson's disease uses an Arduino Nano to help individuals keep their spoon level despite hand tremors, preventing spills. Designed and tested for stability, it ensures the spoon remains upright, enhancing the dining experience and improving quality of life for those with Parkinson's disease.</p>
+                 
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (3).jpeg">
+                <div class="layer">
+                    <h3>RFID- based attendance system</h3>
+                    <p>The RFID-based attendance system, built with PHP, CSS, and JavaScript, uses WIFI for tracking. When an RFID card is swiped, the system logs the arrival time and, upon a second swipe, records the departure time. It utilizes the NodeMCU ESP8266 and MF-RC522 module to transfer data to a PHP web app and store it in a database.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> Email: geethikal900@gmail.com </p>
+                <p><i class="fas fa-phone-square-alt"></i> Phone: +1 940 435 8216</p>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>LinkedIn Icon</title>
+                        <!-- Include Font Awesome CSS -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                    </head>
+                    <body>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/geethika-lankimalla-912a89205/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </body>
+                </html>
+                <a href="images/Resume_Geethika.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <!--<div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>-->
+        </div>
+    </div>
+    
+
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
